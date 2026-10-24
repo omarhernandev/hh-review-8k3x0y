@@ -1,0 +1,468 @@
+<!doctype html><html lang="en"><head>
+<!--
+  Healing Habits website PROTOTYPE
+  © 2026 Omar (ohfreelancing@gmail.com). Shared in confidence for client review only.
+  Not licensed for use, copying, modification, or publication. Remains the author's work until the project is paid in full.
+-->
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="author" content="Omar">
+<meta name="copyright" content="© 2026 Omar. Prototype for client review only."><meta name="viewport" content="width=device-width, initial-scale=1"><title>Healing Habits — Practice Change</title><meta name="description" content="Healing Habits: coaching, movement, and community built around real-life growth."><style>
+:root{--bg:#f4f1e9;--ink:#172523;--teal:#477e75;--lime:#d8e89d;--muted:#69716b;--line:#d8d9cf}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}a{text-decoration:none;color:inherit}button,input,textarea,select{font:inherit}button{cursor:pointer}.wrap{max-width:1180px;margin:auto;padding:0 26px}.top{background:#162b29;color:#f7f5ed;font-size:12px;text-align:center;padding:10px;letter-spacing:.1em}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:22px}.logo{font-weight:900;letter-spacing:-.065em;font-size:27px;line-height:.85}.logo small{display:block;font-size:9px;letter-spacing:.23em;margin-top:8px;font-weight:600}.links{display:flex;gap:27px;font-size:13px;font-weight:650}.nav .cta{white-space:nowrap}.btn{border:1px solid var(--ink);background:var(--ink);color:white;padding:14px 22px;border-radius:3px;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;display:inline-flex;align-items:center;justify-content:center;gap:12px;transition:.2s}.btn:hover{transform:translateY(-2px);background:#335d55}.btn.light{background:var(--lime);color:var(--ink);border-color:var(--lime)}.btn.outline{background:transparent;color:var(--ink)}.btn.outline:hover{background:#e6e8dc}.hero{background:#172b28;color:#f6f4e9;position:relative;overflow:hidden}.hero .grid{min-height:640px;display:grid;grid-template-columns:1.12fr .88fr;align-items:center;gap:35px}.eyebrow{font-size:11px;font-weight:850;letter-spacing:.2em;text-transform:uppercase;color:var(--teal)}.hero .eyebrow{color:var(--lime)}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(64px,8.6vw,122px);line-height:.91;letter-spacing:-.075em;margin:22px 0 26px;font-weight:850}h1 em{font-family:Georgia,serif;font-weight:400;color:var(--lime)}.hero p{max-width:490px;color:#c3ccc6;font-size:16px;line-height:1.75}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.hero-art{position:relative;height:515px;border:1px solid #627a70;background:radial-gradient(ellipse at 62% 38%,#6c8d79 0,#2f554d 37%,#132622 75%);overflow:hidden}.hero-art:before{content:"";position:absolute;width:380px;height:380px;border:1px solid #acc4a8;border-radius:50%;left:50%;top:46%;transform:translate(-50%,-50%);box-shadow:0 0 0 55px #ffffff0b,0 0 0 110px #ffffff08}.hero-art:after{content:"HH";position:absolute;inset:0;display:grid;place-items:center;font:italic 220px Georgia,serif;letter-spacing:-.16em;padding-right:32px;color:#d8e89d;text-shadow:0 18px 60px #101e1b}.art-bottom{position:absolute;z-index:2;bottom:20px;left:22px;right:22px;display:flex;justify-content:space-between;font-size:11px;letter-spacing:.16em}.ticker{background:var(--lime);padding:17px 0;font-weight:800;letter-spacing:.16em;font-size:12px;overflow:hidden;white-space:nowrap;text-align:center}.section{padding:110px 0}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:38px}.section h2{font-size:clamp(42px,5.5vw,72px);line-height:1.02;letter-spacing:-.065em;margin:14px 0}.section-head p{max-width:380px;color:#5e6862;line-height:1.7}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{background:#fffefa;border:1px solid var(--line);padding:28px;min-height:330px;display:flex;flex-direction:column}.card .num{font-size:12px;color:var(--teal);font-weight:900}.card h3{font-size:27px;letter-spacing:-.045em;margin:58px 0 14px}.card p{font-size:14px;color:#5c6962;line-height:1.7}.card a{font-weight:850;font-size:12px;letter-spacing:.07em;margin-top:auto}.dark{background:#172b28;color:#f5f4ea}.dark .eyebrow{color:var(--lime)}.split{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}.quote-art{min-height:440px;background:#3b665d;padding:45px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}.quote-art:after{content:"→";font-size:300px;position:absolute;right:-10px;bottom:-135px;color:#c6dfab33}.quote-art strong{font:italic 55px/1.08 Georgia,serif;max-width:440px;position:relative;z-index:1}.quote-art span{font-size:11px;letter-spacing:.15em;position:relative;z-index:1}.split p{color:#bfcfc7;line-height:1.85}.pillars{display:flex;flex-wrap:wrap;gap:9px;margin:25px 0}.pillars span{border:1px solid #789188;padding:10px 14px;font-size:11px;letter-spacing:.08em}.program{background:#e7e9dd}.program-box{background:#d8e89d;padding:50px;display:grid;grid-template-columns:1.1fr .9fr;gap:50px}.program-box h2{font-size:clamp(46px,6vw,75px)}.program-box p{line-height:1.75;max-width:530px}.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px}.fact{border-top:1px solid #8da27a;padding:18px 0}.fact strong{display:block;font-size:28px;letter-spacing:-.05em}.fact small{font-size:11px;text-transform:uppercase;letter-spacing:.1em}.videos{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.video{border:1px solid var(--line);background:white}.thumb{height:205px;display:grid;place-items:center;position:relative;background:linear-gradient(135deg,#24433e,#74958b);color:var(--lime)}.video:nth-child(2) .thumb{background:linear-gradient(135deg,#697967,#293b31)}.video:nth-child(3) .thumb{background:linear-gradient(135deg,#4b6156,#1b2e2b)}.play{width:62px;height:62px;border:1px solid #e5f0dc;border-radius:50%;display:grid;place-items:center;font-size:23px;padding-left:4px}.video-info{padding:23px}.video-info h3{font-size:21px;margin:10px 0}.video-info small{font-size:10px;color:var(--teal);font-weight:800;letter-spacing:.13em}.video-info p{font-size:13px;color:#63706a;line-height:1.5}.pricing{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.price{padding:25px;border:1px solid #c9d1c6;background:#fdfcf6}.price h3{margin:0 0 10px;font-size:23px}.price strong{font-size:31px;letter-spacing:-.04em}.price strong small{font-size:13px;letter-spacing:0}.price p{font-size:13px;color:#6b756d;min-height:65px;line-height:1.6}.price.featured{background:#254b42;color:white}.price.featured p{color:#c5d6cb}.contact{display:grid;grid-template-columns:1fr 1fr;gap:70px}.contact p{line-height:1.8;color:#5b675f}form{display:grid;gap:12px}input,textarea,select{width:100%;border:1px solid #cbd1c6;background:#fffefa;padding:15px;border-radius:2px;color:var(--ink)}textarea{min-height:110px;resize:vertical}.note{font-size:11px;color:#6d746d;line-height:1.6}.footer{background:#142824;color:white;padding:65px 0 25px}.footer-inner{display:flex;justify-content:space-between;gap:30px;align-items:start}.footer p{color:#b9cbc1;font-size:13px;max-width:360px;line-height:1.8}.footer-links{display:flex;gap:20px;font-size:12px}.bottom{border-top:1px solid #456057;margin-top:50px;padding-top:20px;font-size:11px;color:#b1c2b8;display:flex;justify-content:space-between}.demo{position:fixed;bottom:18px;right:18px;background:#d8e89d;color:#172b28;padding:10px 14px;font-size:11px;font-weight:850;box-shadow:0 6px 24px #0003;z-index:10}.modal{display:none;position:fixed;inset:0;background:#0d1b19dd;z-index:20;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}.modal-card{max-width:520px;background:#f4f1e9;padding:38px;position:relative}.close{position:absolute;right:14px;top:10px;border:0;background:none;font-size:28px}.modal-card p{line-height:1.7;color:#59675f}.menu{display:none}@media(max-width:850px){.links{display:none}.menu{display:block;border:0;background:transparent;font-size:24px}.links.open{display:flex;position:absolute;top:115px;left:0;right:0;background:var(--bg);padding:25px;z-index:5;flex-direction:column;box-shadow:0 15px 25px #0002}.hero .grid,.split,.program-box,.contact{grid-template-columns:1fr}.hero .grid{padding:65px 0}.hero-art{height:360px}.cards,.videos{grid-template-columns:1fr 1fr}.pricing{grid-template-columns:1fr 1fr}.section{padding:75px 0}.split{gap:30px}.section-head{display:block}}@media(max-width:560px){.nav{height:68px}.nav .cta{display:none}.links.open{top:105px}.hero-art{height:290px}.hero-art:after{font-size:140px}.cards,.videos,.pricing{grid-template-columns:1fr}.card{min-height:260px}.card h3{margin-top:30px}.section-head{margin-bottom:25px}.program-box{padding:27px}.facts{grid-template-columns:1fr 1fr}.footer-inner,.bottom{display:block}.footer-links{margin-top:25px;flex-wrap:wrap}.demo{font-size:9px}}
+
+/* prototype watermark: faint, tiled, non-interactive */
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:199;opacity:.11;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='420' height='260'><text x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle' transform='rotate(-24 210 130)' font-family='Arial,Helvetica,sans-serif' font-size='17' font-weight='700' fill='%23777'>PROTOTYPE  ·  © 2026 OMAR  ·  CLIENT REVIEW ONLY</text></svg>")}
+.rib{background:#0d1b19;color:#f7f5ed;font-size:12px;line-height:1.4;padding:8px 26px;text-align:center}
+.footer .pf{max-width:none;font-size:11px;color:#b1c2b8;margin:14px 0 0;line-height:1.6}
+
+/* =========================================================
+   ADD-ON LAYER: demo view with and without add-ons
+   ========================================================= */
+[hidden]{display:none!important}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+input[type=checkbox],input[type=radio]{width:auto;padding:0;accent-color:var(--teal);flex:none}
+.tl{font-weight:850;font-size:12px;letter-spacing:.07em;color:var(--teal);text-transform:uppercase}
+.dark .tl,.price.featured .tl{color:var(--lime)}
+.tl:hover{text-decoration:underline}
+.ph{background:#d8e89d66;border-bottom:2px dashed var(--teal);padding:0 4px}
+.dark .ph{background:#d8e89d22;border-color:var(--lime)}
+.modal{z-index:40}
+body{padding-bottom:var(--demo-h,0px)}
+
+/* highlight + flash */
+body.hl [data-addon]{outline:2px dashed #d9822b;outline-offset:6px;position:relative}
+body.hl [data-addon]::after{content:"Add-on " attr(data-addon);position:absolute;top:-12px;left:6px;z-index:20;background:#d9822b;color:#172523;font:800 10px/1 Inter,system-ui,sans-serif;letter-spacing:.06em;padding:4px 8px;border-radius:99px;pointer-events:none;text-transform:none}
+body.hl section[data-addon]{outline-offset:-8px}
+body.hl section[data-addon]::after{top:14px;left:20px}
+body.hl .links [data-addon]::after,body.hl .footer-links [data-addon]::after{display:none}
+.flash{outline:3px solid transparent;outline-offset:6px;animation:flash 2.2s ease-out 1}
+section.flash{outline-offset:-8px}
+@keyframes flash{0%,65%{outline-color:#d9822b}100%{outline-color:transparent}}
+@media(prefers-reduced-motion:reduce){.flash{animation:none}}
+
+/* demo controls (not part of the site) */
+.dbar{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);width:min(1000px,calc(100% - 20px));z-index:30;background:#162b29;color:#f7f5ed;border:1px solid #627a70;box-shadow:0 10px 34px #0006;padding:12px 16px;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.dbar button{font:inherit;letter-spacing:inherit;text-transform:inherit}
+.dbar :focus-visible{outline:2px solid var(--lime);outline-offset:2px}
+.dr{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px}
+.dr+.dr{margin-top:10px;padding-top:10px;border-top:1px solid #36524b}
+.dt{color:var(--lime)}
+.seg{display:inline-flex;border:1px solid #8aa79a;border-radius:3px;overflow:hidden}
+.seg button{background:transparent;color:#f7f5ed;border:0;padding:10px 14px}
+.seg button[aria-pressed=true]{background:var(--lime);color:var(--ink)}
+.dbtn{background:transparent;color:#f7f5ed;border:1px solid #8aa79a;border-radius:3px;padding:10px 14px}
+.dbtn[aria-pressed=true]{background:#d9822b;border-color:#d9822b;color:var(--ink)}
+.dtot{margin-left:auto;text-align:right;line-height:1.2}
+.dtot b{display:block;font-size:22px;letter-spacing:-.02em;text-transform:none}
+.dtot span{font-size:10px;color:#b9cbc1;font-weight:600}
+.dchip{display:inline-flex;align-items:center;gap:8px;background:transparent;color:#f7f5ed;border:1px solid #8aa79a;border-radius:99px;padding:5px 14px 5px 5px}
+.dchip i{font-style:normal;display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:#36524b}
+.dchip[aria-pressed=true]{border-color:var(--lime)}
+.dchip[aria-pressed=true] i{background:var(--lime);color:var(--ink)}
+.dbar.min .hm{display:none}
+@media(max-width:700px){.dtot{margin-left:0;text-align:left}}
+.toast{position:fixed;left:50%;bottom:calc(var(--demo-h,0px) + 12px);transform:translateX(-50%);z-index:50;background:var(--lime);color:var(--ink);padding:12px 18px;font-size:13px;font-weight:700;line-height:1.45;max-width:min(560px,92vw);box-shadow:0 6px 24px #0004}
+
+/* dialogs */
+dialog{border:0;padding:0;background:var(--bg);color:var(--ink);max-width:min(920px,calc(100% - 24px));width:100%;max-height:calc(100% - 24px)}
+dialog::backdrop{background:#0d1b19dd}
+.dlg{padding:38px;position:relative}
+.dlg .close{position:absolute;right:14px;top:10px;border:0;background:none;font-size:28px;color:var(--ink)}
+.dlg h2{font-size:clamp(30px,4vw,44px);letter-spacing:-.05em;line-height:1.05;margin:12px 0 14px}
+.tot3{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:18px 0 22px}
+.tot3>div{border:1px solid var(--line);background:#fffefa;padding:16px;font-size:13px;line-height:1.5}
+.tot3 b{display:block;font-size:28px;letter-spacing:-.05em}
+.ts{overflow-x:auto}
+.ctab{width:100%;border-collapse:collapse;font-size:13px;line-height:1.55;min-width:640px}
+.ctab th{font-size:11px;letter-spacing:.1em;text-transform:uppercase;text-align:left;color:var(--teal)}
+.ctab th,.ctab td{padding:12px 14px 12px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.ctab td.n{font-weight:850;font-size:16px;white-space:nowrap}
+.ctab .btn{padding:10px 14px}
+
+/* add-on content */
+.sgn{border:1px solid var(--line);background:#fffefa;padding:28px;margin-top:17px;display:grid;grid-template-columns:1fr 1.2fr;gap:34px;align-items:start}
+.inl{display:flex;gap:10px;flex-wrap:wrap}
+.inl input[type=email]{flex:1;min-width:200px;width:auto}
+.tags{display:flex;flex-wrap:wrap;gap:8px 18px;margin:14px 0 6px}
+.tags label{display:flex;gap:8px;align-items:center;font-size:13px}
+details.seq{margin-top:14px;border-top:1px solid var(--line)}
+details.seq summary{cursor:pointer;font-size:11px;font-weight:850;letter-spacing:.1em;text-transform:uppercase;padding:14px 0;color:var(--teal)}
+.em{border-left:3px solid var(--teal);padding-left:14px;margin:0 0 14px;font-size:13px;line-height:1.7;color:#4a5750}
+.em b{display:block;color:var(--ink);font-size:14px;letter-spacing:-.02em}
+.fsg{margin-top:22px;max-width:360px}
+.footer input[type=email]{background:#1d3631;border-color:#456057;color:#fff}
+.cm{display:grid;grid-template-columns:1.3fr .7fr;gap:34px;align-items:start;margin-top:34px}
+.comp{background:#fffefa;color:var(--ink);padding:26px;border:1px solid var(--line)}
+.comp h3{font-size:22px;letter-spacing:-.04em;margin-bottom:14px}
+.dark .comp .eyebrow{color:var(--teal)}
+.dark .comp .note{color:#6d746d}
+.dz{display:flex;flex-wrap:wrap;gap:12px;align-items:center;border:1px dashed #8a968f;padding:14px;position:relative}
+.dz input[type=file]{position:absolute;width:1px;height:1px;opacity:0}
+.dz input[type=file]:focus-visible+label{outline:2px solid var(--teal);outline-offset:3px}
+.pvs{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px}
+.pvs:empty{display:none}
+.pv{display:grid;gap:6px;font-size:12px}
+.pv img,.pv video{width:100%;aspect-ratio:4/3;object-fit:cover}
+.pv button{border:0;background:none;text-align:left;text-decoration:underline;padding:0;color:var(--ink)}
+.spb{display:flex;flex-wrap:wrap;gap:9px;margin:30px 0 0}
+.spb button{border:1px solid #789188;background:transparent;color:#f5f4ea;padding:10px 14px;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+.spb button[aria-pressed=true]{background:var(--lime);border-color:var(--lime);color:var(--ink)}
+.posts{display:grid;gap:12px;margin-top:14px}
+.cpost{background:#fffefa;color:var(--ink);border:1px solid var(--line);padding:22px;display:grid;grid-template-columns:44px 1fr;gap:14px}
+.av{width:44px;height:44px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font-weight:850;font-size:12px}
+.cpost.eli .av{background:var(--teal)}
+.cpost .meta{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#6d746d;font-weight:700}
+.cpost .meta b{color:var(--ink)}
+.cpost p{font-size:14px;line-height:1.7;color:#3f4b45;margin:8px 0 0;white-space:pre-wrap}
+.cpost .media{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin-top:10px}
+.cpost .media img,.cpost .media video{width:100%;max-height:300px;object-fit:cover}
+.smp{font-size:10px;border:1px dashed var(--teal);color:var(--teal);padding:1px 6px;margin-left:6px}
+.acts{display:flex;gap:14px;align-items:center;margin-top:12px}
+.acts button{border:1px solid #cbd1c6;background:transparent;padding:6px 14px;border-radius:99px;font-size:12px;font-weight:700;color:var(--ink)}
+.acts button[aria-pressed=true]{background:var(--teal);border-color:var(--teal);color:#fff}
+.acts .rp{border:0;text-decoration:underline;color:#6d746d;padding:0}
+.rail{background:#1f3a35;border:1px solid #36524b;padding:26px;color:#e8efe9}
+.rail+.rail{margin-top:12px}
+.rail h3{font-size:19px;letter-spacing:-.03em;margin-bottom:10px}
+.rail ul{padding-left:18px;margin:0;font-size:13px;line-height:1.75;color:#c3ccc6}
+.rail p{font-size:13px;line-height:1.7;color:#c3ccc6;margin:0}
+.tps{display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
+.tp{border-top:1px solid var(--line);padding:20px 0}
+.tp h3{font-size:21px;letter-spacing:-.045em;margin-bottom:6px}
+.tp p{font-size:14px;color:#5c6962;line-height:1.7;margin:0}
+.enr{display:grid;grid-template-columns:1.5fr 1fr;gap:34px;align-items:start;margin-top:20px}
+.stp{list-style:none;padding:0;margin:0 0 22px;display:flex;flex-wrap:wrap;gap:8px 18px;counter-reset:st;font-size:11px;font-weight:850;letter-spacing:.1em;text-transform:uppercase}
+.stp li{counter-increment:st;display:flex;align-items:center;gap:8px;color:#6d746d}
+.stp li:before{content:counter(st);display:grid;place-items:center;width:24px;height:24px;border:1px solid var(--ink);border-radius:50%;color:var(--ink)}
+.stp li[aria-current=step]{color:var(--ink)}
+.stp li[aria-current=step]:before{background:var(--ink);color:#fff}
+.stp li.past:before{content:"\2713";background:var(--lime);border-color:var(--lime)}
+.pk{display:flex;gap:12px;align-items:flex-start;border:1px solid #cbd1c6;background:#fffefa;padding:16px;cursor:pointer}
+.pk:has(input:checked){border-color:var(--ink);background:var(--lime)}
+.pk b{display:block;font-size:19px;letter-spacing:-.03em}
+.pk span{font-size:13px;color:#4a5750;line-height:1.5}
+.sum{background:#172b28;color:#f5f4ea;padding:26px}
+.sum h3{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--lime);margin-bottom:12px}
+.sum .amt{font-size:42px;font-weight:850;letter-spacing:-.05em;line-height:1;margin:16px 0 4px}
+.sum p{color:#c3ccc6;font-size:13px;line-height:1.6;margin:0}
+.agree{height:130px;overflow:auto;border:1px solid #cbd1c6;background:#fffefa;padding:14px;font-size:13px;line-height:1.6}
+.ck{display:flex;gap:10px;align-items:flex-start;font-size:13px;line-height:1.5}
+.cn{border-left:3px solid var(--teal);background:#e9ebe2;padding:12px 14px;font-size:12px;line-height:1.6}
+.qq{display:block;font-size:14px;line-height:1.5;margin:4px 0 8px;color:#3f4b45}
+.okb{border:1px solid var(--teal);background:#e9ebe2;padding:20px;line-height:1.7}
+.okb h3{font-size:24px;letter-spacing:-.04em;margin-bottom:6px}
+@media(max-width:850px){.sgn,.cm,.tps,.enr{grid-template-columns:1fr}.dlg{padding:26px 20px}}
+</style></head><body><div class="rib"><strong>Prototype for client review. © 2026 Omar. Not for use, copying, or publication.</strong></div><div class="top">HEALING HABITS &nbsp; / &nbsp; INSIGHT → PRACTICE → HABITS → GROWTH</div><header class="wrap nav"><a class="logo" href="#home">healing<br>habits<small>REAL GROWTH. REAL LIFE.</small></a><nav class="links" id="links"><a href="#about">Our Approach</a><a href="#services">Services</a><a href="#better-man">Better Man Project</a><a href="#community" data-addon="A" hidden>Community</a><a href="#resources">Resources</a><a href="#speaking" data-addon="D" hidden>Speaking</a><a href="#contact">Contact</a></nav><a class="btn cta" href="#contact">Let's Talk ↗</a><button class="menu" aria-label="Toggle navigation" onclick="document.getElementById('links').classList.toggle('open')">☰</button></header><main><section class="hero" id="home"><div class="wrap grid"><div><div class="eyebrow">COACHING • MOVEMENT • COMMUNITY</div><h1>Don't just<br>talk about<br><em>change.</em><br>Practice it.</h1><p>Growth doesn't happen only in conversations. It happens in the everyday choices, habits, and moments that shape who you're becoming.</p><div class="actions"><a class="btn light" href="#contact">Start Your Journey ↗</a><a class="btn" style="border-color:#8aa79a;background:transparent" href="#about">Explore Our Approach ↓</a></div></div><div class="hero-art" role="img" aria-label="Abstract Healing Habits brand artwork"><div class="art-bottom"><span>INSIGHT INTO ACTION</span><span>EST. IN PURPOSE</span></div></div></div></section><div class="ticker">STRUCTURE &nbsp; ✳ &nbsp; REGULATION &nbsp; ✳ &nbsp; HABITS &nbsp; ✳ &nbsp; CONFIDENCE &nbsp; ✳ &nbsp; WELLNESS &nbsp; ✳ &nbsp; PRACTICE MAKES PROGRESS</div><section class="section wrap" id="services"><div class="section-head"><div><div class="eyebrow">01 / WHAT WE DO</div><h2>Real support.<br>Real momentum.</h2></div><p>Not just more insight. Practical coaching, movement, and community to help you follow through on the life you want to build.</p></div><div class="cards"><article class="card"><div class="num">01 / PERSONAL GROWTH</div><h3>1:1 Coaching</h3><p>Build structure, emotional skills, accountability, and habits that hold up in real life.</p><a href="#packages">EXPLORE COACHING ↗</a></article><article class="card"><div class="num">02 / MIND + BODY</div><h3>Movement Coaching</h3><p>Find confidence, consistency, and a healthier, more sustainable relationship with movement.</p><a href="#contact">EXPLORE MOVEMENT ↗</a></article><article class="card"><div class="num">03 / CONNECTION</div><h3>Community & Groups</h3><p>Show up for yourself and others through group experiences, accountability, and shared growth.</p><a href="#better-man" data-without="A">DISCOVER THE COMMUNITY ↗</a><a href="#community" data-addon="A" hidden>JOIN THE PRACTICE ROOM ↗</a></article></div></section><section class="section dark" id="about"><div class="wrap split"><div class="quote-art"><span>THE HEALING HABITS PHILOSOPHY</span><strong>Life is where the work happens.</strong><span>INSIGHT → PRACTICE → HABITS → GROWTH</span></div><div><div class="eyebrow">02 / OUR APPROACH</div><h2>Knowing isn't<br>the same as<br>doing.</h2><p>Healing Habits bridges the gap between understanding what needs to change and actually living it. We focus on the everyday practices that build confidence, resilience, and independence.</p><p>Founded around a simple belief: meaningful growth takes more than good intentions. It takes structure, support, and consistent action.</p><div class="pillars"><span>STRUCTURE</span><span>REGULATION</span><span>HABITS</span><span>CONFIDENCE</span><span>WELLNESS</span></div><a class="btn light" href="#contact">Meet Eli / Get in Touch ↗</a><p style="font-size:11px;margin-top:20px">Eli McCary's approved biography and portrait will be added here.</p><p style="margin-top:22px" data-without="D">Eli also speaks and leads workshops. <a class="tl" href="#contact" data-interest="Speaking &amp; workshops">Send a speaking inquiry ↗</a></p><p style="margin-top:22px" data-addon="D" hidden>Eli also speaks and leads workshops. <a class="tl" href="#speaking">See Speaking &amp; Workshops ↗</a></p></div></div></section><section class="section program" id="better-man"><div class="wrap"><div class="eyebrow">03 / THE SIGNATURE MEN'S PROGRAM</div><div class="program-box"><div><h2>The Better<br>Man Project.</h2><p>A men's coaching community focused on emotional awareness, discipline, integrity, confidence, and meaningful connection. A space to practice becoming the man you want to be.</p><a class="btn" href="#contact">Ask About the Next Cohort ↗</a></div><div><div class="facts"><div class="fact"><strong>13</strong><small>Weeks of growth</small></div><div class="fact"><strong>90 min</strong><small>Weekly virtual sessions</small></div><div class="fact"><strong>10</strong><small>Participants maximum</small></div><div class="fact"><strong>5</strong><small>Core tenets</small></div></div><p class="note" style="margin-top:20px">Program details and introductory pricing are subject to confirmation before launch.</p><p class="note" style="margin-top:12px" data-addon="B" hidden>Once Eli confirms it’s a good fit, you’ll get a private link to reserve your seat. <a class="tl" style="color:#172523" href="#" data-enroll="bmp">Preview the reserve-your-seat step ↗</a></p></div></div></div></section><section class="section dark" id="community" data-addon="A" hidden>
+<div class="wrap">
+<div class="section-head"><div><div class="eyebrow">THE PRACTICE ROOM</div><h2>You don’t have to<br>grow alone.</h2></div><p style="color:#bfcfc7">A members-only space to share what you practiced this week: wins, training check-ins, goals, and the things that are harder to say out loud.</p></div>
+<div class="actions" style="margin-top:0"><button class="btn light" type="button" data-toast="In the live site this opens the community platform’s join page.">Join the Practice Room ↗</button></div>
+<div class="spb" id="spaceBtns" role="group" aria-label="Spaces"></div>
+<div class="cm">
+<div>
+<form class="comp" id="cpForm">
+<h3>Share your practice</h3>
+<label><span class="eyebrow">WHAT DID YOU PRACTICE?</span><textarea id="cpText" placeholder="I wanted to leave at minute 8. I stayed."></textarea></label>
+<div class="dz"><input type="file" id="cpFiles" accept="image/*,video/*" multiple><label class="btn outline" for="cpFiles">Add photos or video</label><span class="note">Up to 4 per post. Photos of the work are welcome.</span></div>
+<div class="pvs" id="cpPrev" aria-live="polite"></div>
+<label><span class="eyebrow">POST TO</span><select id="cpSpace"></select></label>
+<label class="ck"><input type="checkbox" id="cpRules"> <span>I’ve read the community guidelines. This post is about practice, not appearance.</span></label>
+<button class="btn" type="submit">Post ↗</button>
+<div class="note">Demo only. Files stay in this browser tab and are never uploaded.</div>
+</form>
+<div class="posts" id="posts"></div>
+</div>
+<aside>
+<div class="rail"><h3>Community guidelines</h3><p style="margin-bottom:10px"><span class="ph">Draft for Eli to review</span></p>
+<ul><li>Showing up, consistency, and hard conversations are the wins.</li><li>Gym photos are welcome. Before-and-after body photos are not.</li><li>No weights, calorie numbers, or body comparisons.</li><li>Be direct and kind. Feedback should help, not shame.</li></ul></div>
+<div class="rail"><h3>This isn’t therapy</h3><p>The Practice Room is coaching and peer support. It is not psychotherapy or crisis care, and it isn’t monitored around the clock. Eli checks in <span class="ph">[days and times]</span>. If you’re in crisis, call or text 988, or call 911 in an emergency.</p></div>
+<div class="rail"><h3>For the demo</h3><p>In the live build, the community runs on a dedicated platform (Skool, Circle, or Mighty Networks) in Eli’s account, and this page links to it. Membership model and price are still open: paid, included with coaching, or included with The Better Man Project.</p></div>
+</aside>
+</div>
+</div>
+</section>
+<section class="section wrap" id="resources"><div class="section-head"><div><div class="eyebrow">04 / THE CONVERSATION CONTINUES</div><h2>Thoughts worth<br>putting into action.</h2></div><p>Real conversations about growth, relationships, emotional regulation, movement, and everything in between.</p></div><div class="videos"><article class="video"><div class="thumb"><button class="play" aria-label="Preview video concept" onclick="showModal('video')">▶</button></div><div class="video-info"><small>EMOTIONAL GROWTH</small><h3>What does emotional regulation really look like?</h3><p>Video concept • Actual videos coming soon</p></div></article><article class="video"><div class="thumb"><button class="play" aria-label="Preview video concept" onclick="showModal('video')">▶</button></div><div class="video-info"><small>HABITS & ACCOUNTABILITY</small><h3>Why knowing better isn't always doing better</h3><p>Video concept • Actual videos coming soon</p></div></article><article class="video"><div class="thumb"><button class="play" aria-label="Preview video concept" onclick="showModal('video')">▶</button></div><div class="video-info"><small>MOVEMENT & WELLNESS</small><h3>Movement that adds to your life</h3><p>Video concept • Actual videos coming soon</p></div></article></div><div class="sgn" id="signup">
+<div><div class="eyebrow">STAY IN THE LOOP</div><h3 style="font-size:28px;letter-spacing:-.05em;margin:12px 0 8px">New videos and practices, in your inbox.</h3><p style="font-size:14px;color:#5c6962;line-height:1.7;margin:0">One short email when something new goes up. Unsubscribe anytime.</p></div>
+<form id="sg1">
+<div class="inl"><input type="email" aria-label="Email address" placeholder="you@example.com" required><button class="btn" type="submit">Join the list ↗</button></div>
+<div data-addon="C" hidden>
+<div class="tags" role="group" aria-label="Topics you want to hear about"><label><input type="checkbox" checked> Coaching</label><label><input type="checkbox"> The Better Man Project</label><label><input type="checkbox"> Movement</label></div>
+<div class="note">Joining also gets you a free resource: <span class="ph">[Eli’s choice, such as a one-page weekly practice planner]</span></div>
+<details class="seq"><summary>Preview the 3-email welcome sequence</summary>
+<p class="note" style="margin-bottom:14px">Drafted in Eli’s voice, for his review.</p>
+<div class="em"><b>1. Welcome. Here’s how this works.</b>Thanks for joining. Healing Habits is built on one idea: mental health and personal growth aren’t only things we talk about. They’re things we practice. Over the next few emails, I’ll share how we think about change and give you something small to try.</div>
+<div class="em"><b>2. Knowing it and doing it aren’t the same thing.</b>You probably already know a lot about what you’d like to change. Insight matters. It just doesn’t do the work for you. So here’s the question I ask: okay, we understand what needs to change. What are we actually going to do about it this week?</div>
+<div class="em"><b>3. Your first practice.</b>Pick one thing you’ve been avoiding because it feels uncomfortable. Make it small enough to finish this week. Name the barrier ahead of time. Then do it and notice what happens. Want help building a plan? The first conversation is free: <a class="tl" href="#contact">book a 20-minute consultation</a>.</div>
+</details>
+</div>
+<div class="note">Demo only: connects to Eli’s free email list at launch.</div>
+</form>
+</div></section><section class="section" style="background:#e9ebe2" id="packages"><div class="wrap"><div class="eyebrow">05 / PERSONALIZED SUPPORT</div><h2>Choose your momentum.</h2><p style="color:#667168;margin-bottom:32px">Illustrative package display based on the supplied business plan. Final pricing and terms require Eli's approval.</p><div class="pricing"><article class="price"><h3>Foundation</h3><strong>$300<small>/mo</small></strong><p>Monthly coaching and an actionable habit plan.</p><a class="btn outline" href="#contact">Inquire ↗</a><p style="margin:14px 0 0" data-addon="B" hidden><a class="tl" href="#" data-enroll="foundation">Already talked with Eli? Enroll ↗</a></p></article><article class="price featured"><h3>Momentum</h3><strong>$600<small>/mo</small></strong><p>Twice-monthly coaching and accountability check-ins.</p><a class="btn light" href="#contact">Inquire ↗</a><p style="margin:14px 0 0" data-addon="B" hidden><a class="tl" href="#" data-enroll="momentum">Already talked with Eli? Enroll ↗</a></p></article><article class="price"><h3>Elevate</h3><strong>$900<small>/mo</small></strong><p>Weekly coaching and structured ongoing support.</p><a class="btn outline" href="#contact">Inquire ↗</a><p style="margin:14px 0 0" data-addon="B" hidden><a class="tl" href="#" data-enroll="elevate">Already talked with Eli? Enroll ↗</a></p></article><article class="price"><h3>Thrive</h3><strong>$1,200<small>/mo</small></strong><p>Selective higher-support coaching by consultation.</p><a class="btn outline" href="#contact">Inquire ↗</a></article></div></div></section><section class="section wrap" id="speaking" data-addon="D" hidden>
+<div class="section-head"><div><div class="eyebrow">SPEAKING &amp; WORKSHOPS</div><h2>Beyond insight,<br>into action.</h2></div><p>Conference talks, professional workshops, educational presentations, and trainings for treatment programs, schools, organizations, and communities.</p></div>
+<div class="tps">
+<div class="tp"><h3>Men’s mental health</h3><p>Creating environments where young men feel comfortable participating and engaging.</p></div>
+<div class="tp"><h3>Movement and mental health</h3><p>Understanding physical activity as part of overall wellness.</p></div>
+<div class="tp"><h3>Discomfort and change</h3><p>Why constantly escaping discomfort can interfere with growth.</p></div>
+<div class="tp"><h3>Beyond insight</h3><p>Turning therapeutic or personal insight into real-world behavioral change.</p></div>
+<div class="tp"><h3>Executive functioning in everyday life</h3><p>Practical strategies for structure, routines, organization, and follow-through.</p></div>
+<div class="tp"><h3>Community in mental health treatment</h3><p>Using connection, mentorship, accountability, and shared experience to support recovery.</p></div>
+<div class="tp"><h3>Masculinity and emotional intelligence</h3><p>Helping men build emotional awareness while exploring healthy expressions of masculinity.</p></div>
+</div>
+<div class="contact" style="margin-top:70px" id="sp-form">
+<div>
+<div class="eyebrow">ABOUT THE SPEAKER</div>
+<h2 style="font-size:clamp(34px,4vw,52px);letter-spacing:-.06em;margin:14px 0">Book Eli.</h2>
+<p><span class="ph">[Professional speaker bio, credentials, headshot, and speaking clips. Eli to provide. Best built once speaker materials are ready.]</span></p>
+<p><button class="btn outline" type="button" data-toast="In the live site this downloads Eli’s speaker sheet.">Download the speaker sheet ↓</button></p>
+</div>
+<form id="spForm">
+<label><span class="eyebrow">YOUR NAME</span><input required placeholder="Your name"></label>
+<label><span class="eyebrow">ORGANIZATION</span><input placeholder="Organization"></label>
+<label><span class="eyebrow">EMAIL ADDRESS</span><input type="email" required placeholder="you@example.com"></label>
+<label><span class="eyebrow">TOPIC OF INTEREST</span><select><option>Men’s mental health</option><option>Movement and mental health</option><option>Discomfort and change</option><option>Beyond insight</option><option>Executive functioning in everyday life</option><option>Community in mental health treatment</option><option>Masculinity and emotional intelligence</option><option>Not sure yet</option></select></label>
+<label><span class="eyebrow">EVENT DATE AND AUDIENCE SIZE</span><input placeholder="Date, and about how many people"></label>
+<label><span class="eyebrow">ABOUT THE EVENT</span><textarea></textarea></label>
+<button class="btn" type="submit">Preview Speaking Inquiry ↗</button>
+<div class="note">Demo only: this form does not transmit or store information.</div>
+</form>
+</div>
+</section>
+<section class="section wrap" id="contact"><div class="contact"><div><div class="eyebrow">06 / TAKE THE FIRST STEP</div><h2>Ready to make<br>it real?</h2><p>Tell us a little about what you're working toward. We'll help you explore the next step, whether that's individual coaching, movement, or The Better Man Project.</p><p><strong>Free 20-minute consultation</strong><br>Booking integration will be connected before launch.</p></div><form id="contactForm"><label><span class="eyebrow">YOUR NAME</span><input name="name" placeholder="Your name" required></label><label><span class="eyebrow">EMAIL ADDRESS</span><input name="email" type="email" placeholder="you@example.com" required></label><label><span class="eyebrow">I'M INTERESTED IN</span><select name="interest" id="interestSel"><option>Individual coaching</option><option>Movement coaching</option><option>The Better Man Project</option><option>Speaking & workshops</option><option>General inquiry</option></select></label><label><span class="eyebrow">MESSAGE (OPTIONAL)</span><textarea name="message" placeholder="A brief, non-sensitive note about your interest"></textarea></label><button class="btn" type="submit">Preview Inquiry Submission ↗</button><div class="note">Demo only: this form does not transmit or store information. Please do not enter sensitive health information.</div></form></div></section></main><footer class="footer"><div class="wrap"><div class="footer-inner"><div><div class="logo">healing<br>habits<small>DON'T JUST TALK ABOUT CHANGE. PRACTICE IT.</small></div><p>Coaching, movement, and community for growth that extends beyond the conversation and into everyday life.</p><form class="fsg" id="sg2" data-addon="C" hidden><div class="inl"><input type="email" aria-label="Email address" placeholder="Join the email list" required><button class="btn light" type="submit">Join ↗</button></div></form></div><div class="footer-links"><a href="#services">Services</a><a href="#better-man">Better Man Project</a><a href="#community" data-addon="A" hidden>Community</a><a href="#resources">Resources</a><a href="#speaking" data-addon="D" hidden>Speaking</a><a href="#" data-addon="B" hidden data-enroll="momentum">Client enrollment</a><a href="#contact">Contact</a></div></div><div class="bottom"><span>© <span id="year"></span> Healing Habits • Concept demo</span><span>Coaching and educational services are not a substitute for medical or mental health treatment.</span></div><p class="pf">Prototype design © 2026 Omar. Shared in confidence for client review only. Not for use, copying, or publication without written permission.</p></div></footer><div class="dbar" id="dbar" role="region" aria-label="Demo controls. Not part of the website.">
+<div class="dr">
+<strong class="dt">MVP demo • not live</strong>
+<div class="seg hm" role="group" aria-label="Site version"><button type="button" id="segCore" aria-pressed="true">Core site</button><button type="button" id="segAll" aria-pressed="false">With add-ons</button></div>
+<button type="button" class="dbtn hm" id="hlBtn" aria-pressed="false" aria-label="Highlight add-ons">Highlight</button>
+<button type="button" class="dbtn hm" id="detBtn">Costs</button>
+<div class="dtot"><b id="tot">$1,500</b><span id="totSub">Core build, one time</span></div>
+<button type="button" class="dbtn" id="minBtn" aria-expanded="true">Hide</button>
+</div>
+<div class="dr hm" id="dchips" role="group" aria-label="Add-ons"></div>
+</div>
+
+<dialog id="costdlg" aria-labelledby="costT"><div class="dlg">
+<button class="close" type="button" id="costX" aria-label="Close">×</button>
+<div class="eyebrow">DEMO ONLY • NOT PART OF THE WEBSITE</div>
+<h2 id="costT">Costs and details</h2>
+<div class="tot3" id="tot3"></div>
+<div class="ts"><table class="ctab"><thead><tr><th>Add-on</th><th>Price</th><th>What it adds</th><th>Platform cost, paid by Eli</th><th><span class="sr">See it</span></th></tr></thead><tbody id="dbody"></tbody></table></div>
+<p class="note" style="margin-top:16px">Platform costs are estimates from the pricing document and change often. Confirm at checkout. Payment processing fees are extra. Not legal, tax, or financial advice.</p>
+</div></dialog>
+
+<dialog id="enrollDlg" aria-labelledby="enrT"><div class="dlg">
+<button class="close" type="button" id="enrX" aria-label="Close">×</button>
+<div class="eyebrow">CLIENT ENROLLMENT</div>
+<h2 id="enrT">Enroll in Healing Habits</h2>
+<p class="note" style="max-width:560px">This link goes to people after their free consultation. It isn’t in the main menu.</p>
+<div class="enr"><div><ol class="stp" id="stp" aria-label="Enrollment steps"></ol><div id="enrBody"></div></div><aside class="sum" id="enrSum" aria-live="polite"></aside></div>
+</div></dialog>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div><div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-card"><button class="close" onclick="closeModal()" aria-label="Close">×</button><div class="eyebrow">HEALING HABITS DEMO</div><h2 id="modalTitle">Feature preview</h2><p id="modalText"></p><button class="btn" onclick="closeModal()">Got it</button></div></div><script>document.getElementById('year').textContent=new Date().getFullYear();document.querySelectorAll('#links a').forEach(a=>a.addEventListener('click',()=>document.getElementById('links').classList.remove('open')));function showModal(type){document.getElementById('modalTitle').textContent=type==='video'?'Video gallery preview':'Inquiry form preview';document.getElementById('modalText').textContent=type==='video'?'This is a sample video card. Once Eli provides real videos, we can embed them from YouTube or another approved host without building a custom streaming system.':'Your form has passed basic browser validation. This MVP does not send or save messages. A secure form provider and destination email will be configured for production.';document.getElementById('modal').classList.add('open')}function closeModal(){document.getElementById('modal').classList.remove('open')}document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal')closeModal()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});document.getElementById('contactForm').addEventListener('submit',e=>{e.preventDefault();showModal('form')});</script><script>
+(function(){
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const money=n=>'$'+n.toLocaleString('en-US',{minimumFractionDigits:Number.isInteger(n)?0:2});
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const on={A:false,B:false,C:false,D:false,E:false}, CORE=1500, BASE_PLATFORM=29;
+let tt; function toast(m){const t=$('#toast');t.textContent=m;t.hidden=false;clearTimeout(tt);tt=setTimeout(()=>t.hidden=true,4200);}
+function note(title,text){$('#modalTitle').textContent=title;$('#modalText').textContent=text;$('#modal').classList.add('open');}
+function jump(id){const t=document.getElementById(id);if(t)t.scrollIntoView({behavior:reduce?'auto':'smooth'});}
+
+/* ---------- generic hooks ---------- */
+document.addEventListener('click',e=>{
+  const t=e.target.closest('[data-toast]'); if(t){e.preventDefault();toast(t.dataset.toast);return;}
+  const en=e.target.closest('[data-enroll]'); if(en){e.preventDefault();openEnroll(en.dataset.enroll);return;}
+  const it=e.target.closest('[data-interest]'); if(it){const s=$('#interestSel');[...s.options].forEach(o=>{if(o.text===it.dataset.interest)s.value=o.value;});}
+});
+$('#sg1').addEventListener('submit',e=>{e.preventDefault();note('Signup preview','In the live site this adds you to Eli’s email list. This demo does not send or save anything.');});
+$('#sg2').addEventListener('submit',e=>{e.preventDefault();note('Signup preview','In the live site this adds you to Eli’s email list. This demo does not send or save anything.');});
+$('#spForm').addEventListener('submit',e=>{e.preventDefault();note('Speaking inquiry preview','Your form has passed basic browser validation. This demo does not send or save messages. In the live site, the inquiry goes to Eli’s email.');});
+
+/* ---------- Practice Room (Add-on A; in memory only) ---------- */
+const spaces=[{id:'all',name:'Everything'},{id:'wins',name:'Weekly wins'},{id:'training',name:'Training check-ins'},{id:'goals',name:'Weekly goals'},{id:'intro',name:'Introductions'},{id:'announce',name:'Announcements'}];
+const spName=id=>(spaces.find(x=>x.id===id)||{}).name;
+let cur='all',pend=[];
+const posts=[
+ {space:'announce',author:'Eli',ini:'E',eli:true,when:'Pinned',text:'Welcome to the Practice Room. Share what you practiced, not how you look doing it. Small counts. Showing up counts. Missing a day and coming back counts most.',media:[],likes:12,sample:true},
+ {space:'training',author:'Sample member',ini:'SM',when:'2 hours ago',text:'Walked into the gym today. Honestly, that took longer than the workout. Twenty minutes in the parking lot first.',media:[],likes:9,sample:true},
+ {space:'wins',author:'Sample member',ini:'JT',when:'Yesterday',text:'Stayed at the group event the full 30 minutes. I wanted to leave at minute 8. I didn’t. That’s the win.',media:[],likes:21,sample:true},
+ {space:'goals',author:'Sample member',ini:'AR',when:'Yesterday',text:'This week: in bed by 11 four nights, one real conversation with my brother, two training sessions. I’ll report back Sunday.',media:[],likes:6,sample:true}
+];
+$('#spaceBtns').append(...spaces.map(sp=>{const b=document.createElement('button');b.type='button';b.textContent=sp.name;b.setAttribute('aria-pressed',sp.id===cur);b.addEventListener('click',()=>{cur=sp.id;$$('#spaceBtns button').forEach(x=>x.setAttribute('aria-pressed','false'));b.setAttribute('aria-pressed','true');renderPosts();});return b;}));
+$('#cpSpace').append(...spaces.filter(x=>x.id!=='all'&&x.id!=='announce').map(x=>{const o=document.createElement('option');o.value=x.id;o.textContent=x.name;return o;}));
+function renderPosts(){
+  const box=$('#posts');box.replaceChildren();
+  const list=posts.filter(p=>cur==='all'||p.space===cur);
+  if(!list.length){const p=document.createElement('p');p.style.color='#bfcfc7';p.textContent='Nothing here yet. Be the first to share what you practiced.';box.append(p);return;}
+  list.forEach(p=>{
+    const a=document.createElement('article');a.className='cpost'+(p.eli?' eli':'');
+    const av=document.createElement('div');av.className='av';av.setAttribute('aria-hidden','true');av.textContent=p.ini;
+    const body=document.createElement('div'),meta=document.createElement('div');meta.className='meta';
+    const nm=document.createElement('b');nm.textContent=p.author;meta.append(nm,' • '+spName(p.space)+' • '+p.when);
+    if(p.sample){const sm=document.createElement('span');sm.className='smp';sm.textContent='SAMPLE';meta.append(sm);}
+    body.append(meta);
+    if(p.text){const t=document.createElement('p');t.textContent=p.text;body.append(t);}
+    if(p.media.length){const m=document.createElement('div');m.className='media';p.media.forEach(x=>{let el;if(x.type==='image'){el=document.createElement('img');el.src=x.url;el.alt=x.alt||'Photo shared by a member';}else{el=document.createElement('video');el.src=x.url;el.controls=true;el.preload='metadata';el.setAttribute('aria-label','Video shared by a member');}m.append(el);});body.append(m);}
+    const acts=document.createElement('div');acts.className='acts';
+    const lk=document.createElement('button');lk.type='button';
+    const paint=()=>{lk.textContent='Nice work • '+(p.likes+(p.liked?1:0));lk.setAttribute('aria-pressed',!!p.liked);};paint();
+    lk.addEventListener('click',()=>{p.liked=!p.liked;paint();});
+    const rp=document.createElement('button');rp.type='button';rp.className='rp';rp.textContent='Report';rp.addEventListener('click',()=>toast('Reported. In the real build, this goes straight to Eli.'));
+    acts.append(lk,rp);body.append(acts);a.append(av,body);box.append(a);
+  });
+}
+renderPosts();
+function renderPending(){
+  const pv=$('#cpPrev');pv.replaceChildren();
+  pend.forEach((x,i)=>{
+    const w=document.createElement('div');w.className='pv';
+    const m=document.createElement(x.type==='image'?'img':'video');m.src=x.url;if(x.type==='image')m.alt='Preview of your photo';else{m.muted=true;m.controls=true;m.setAttribute('aria-label','Preview of your video');}
+    const rm=document.createElement('button');rm.type='button';rm.textContent='Remove';rm.setAttribute('aria-label','Remove file '+(i+1));rm.addEventListener('click',()=>{URL.revokeObjectURL(x.url);pend.splice(i,1);renderPending();});
+    w.append(m,rm);pv.append(w);
+  });
+}
+$('#cpFiles').addEventListener('change',e=>{
+  [...e.target.files].forEach(f=>{
+    if(pend.length>=4){toast('Up to 4 files per post in this demo.');return;}
+    const type=f.type.startsWith('video')?'video':f.type.startsWith('image')?'image':null;
+    if(!type){toast('Photos and videos only.');return;}
+    pend.push({url:URL.createObjectURL(f),type});
+  });e.target.value='';renderPending();
+});
+$('#cpForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  const text=$('#cpText').value.trim();
+  if(!text&&!pend.length){toast('Add a few words, a photo, or a video first.');$('#cpText').focus();return;}
+  if(!$('#cpRules').checked){toast('Please confirm you’ve read the community guidelines.');$('#cpRules').focus();return;}
+  posts.unshift({space:$('#cpSpace').value,author:'You (demo)',ini:'YOU',when:'Just now',text,media:pend.map(x=>({type:x.type,url:x.url})),likes:0});
+  pend=[];renderPending();$('#cpText').value='';$('#cpRules').checked=false;
+  cur='all';$$('#spaceBtns button').forEach((b,i)=>b.setAttribute('aria-pressed',i===0));
+  renderPosts();toast('Posted to the demo feed. Nothing left your device.');
+});
+
+/* ---------- enrollment preview (Add-on B) ---------- */
+const PK={
+ foundation:{n:'Foundation',p:300,t:'per month, automatic',d:'One 60-minute session a month, goals, and a habit plan.'},
+ momentum:{n:'Momentum',p:600,t:'per month, automatic',d:'Two sessions and two check-ins a month, plus executive-function support.'},
+ elevate:{n:'Elevate',p:900,t:'per month, automatic',d:'Four sessions a month and up to two check-ins a week.'},
+ bmp:{n:'The Better Man Project',p:455,t:'pay in full',d:'13 weeks, 90 minutes a week, online.'}
+};
+const E={pkg:'momentum',i:0};
+const stepsFor=()=>E.pkg==='bmp'?['Package','Agreement','Payment','Done']:['Package','Intake','Agreement','Payment','Done'];
+function openEnroll(k){if(k&&PK[k]){E.pkg=k;E.i=0;}renderEnroll();const d=$('#enrollDlg');if(!d.open)d.showModal();}
+function renderEnroll(){
+  const st=stepsFor(),name=st[E.i],pk=PK[E.pkg];
+  $('#stp').innerHTML=st.map((x,i)=>`<li ${i===E.i?'aria-current="step"':''} class="${i<E.i?'past':''}">${x}</li>`).join('');
+  $('#enrSum').innerHTML=`<h3>Your plan</h3><p style="font-size:20px;font-weight:850;letter-spacing:-.03em;color:#fff">${pk.n}</p><p style="margin-top:6px">${pk.d}</p><div class="amt">${money(pk.p)}</div><p>${pk.t}</p>`;
+  const back=E.i>0&&name!=='Done'?'<button class="btn outline" type="button" data-back>Back</button>':'';
+  let h='';
+  if(name==='Package'){
+    h=`<form id="enrForm"><div class="eyebrow">YOUR PACKAGE</div>`+Object.entries(PK).map(([k,v])=>`<label class="pk"><input type="radio" name="pk" value="${k}" ${k===E.pkg?'checked':''}><div><b>${v.n}</b><span>${money(v.p)}, ${v.t}. ${v.d}</span></div></label>`).join('')+`<div class="note">Chosen with Eli in your consultation.</div><div><button class="btn" type="submit">Continue ↗</button></div></form>`;
+  }else if(name==='Intake'){
+    h=`<form id="enrForm"><div class="eyebrow">INTAKE</div><p style="margin:0;font-size:14px;line-height:1.6;color:#4a5750">Short answers are fine. Skip anything you’d rather talk through with Eli.</p>
+    <label><span class="eyebrow">STRUCTURE</span><span class="qq">What’s working or not working in your daily life?</span><textarea></textarea></label>
+    <label><span class="eyebrow">REGULATION</span><span class="qq">What situations or emotions tend to throw you off?</span><textarea></textarea></label>
+    <label><span class="eyebrow">HABITS</span><span class="qq">What are you trying to build, stop, or change?</span><textarea></textarea></label>
+    <label><span class="eyebrow">CONFIDENCE</span><span class="qq">What are you avoiding because it feels uncomfortable?</span><textarea></textarea></label>
+    <label><span class="eyebrow">WELLNESS</span><span class="qq">What do movement, sleep, recreation, social connection, and self-care look like now?</span><textarea></textarea></label>
+    <label><span class="eyebrow">THE BIG QUESTION</span><span class="qq">If coaching went extremely well over the next 90 days, what would be different about your life?</span><textarea required></textarea></label>
+    <div class="note">Please don’t include diagnoses, medications, or other health details.</div>
+    <div class="cn"><b>For Eli:</b> confirm this intake with your compliance advisor before it goes live, especially if Healing Habits Counseling is a licensed clinical practice.</div>
+    <div class="actions" style="margin:0">${back}<button class="btn" type="submit">Continue ↗</button></div></form>`;
+  }else if(name==='Agreement'){
+    h=`<form id="enrForm"><div class="eyebrow">COACHING AGREEMENT</div>
+    <div class="agree" tabindex="0" aria-label="Coaching agreement text"><p><b>DRAFT. Attorney review required.</b></p><p><span class="ph">[Coaching agreement text from Eli or his attorney. Covers scope, payment, 24-hour cancellation, refunds, communication hours, and emergency resources.]</span></p></div>
+    <label class="ck"><input type="checkbox" required> <span>I’ve read the coaching agreement and policies.</span></label>
+    <label class="ck"><input type="checkbox" required> <span>I understand coaching is not psychotherapy, psychiatric care, medical treatment, or crisis services.</span></label>
+    <label class="ck"><input type="checkbox" required> <span>I know to call or text 988, or call 911, in an emergency.</span></label>
+    <label><span class="eyebrow">TYPE YOUR FULL NAME TO SIGN</span><input required autocomplete="name"></label>
+    <div class="actions" style="margin:0">${back}<button class="btn" type="submit">Sign and continue ↗</button></div></form>`;
+  }else if(name==='Payment'){
+    const auto=E.pkg!=='bmp';
+    h=`<form id="enrForm"><div class="eyebrow">PAYMENT</div>
+    <div class="cn">Stripe’s secure checkout appears here. Card details are entered on Stripe, never on this website.</div>
+    <label class="ck"><input type="radio" name="pm" checked> <span>Card</span></label>
+    <label class="ck"><input type="radio" name="pm"> <span>Bank transfer (ACH)</span></label>
+    <p style="margin:0;font-size:14px">${auto?`${money(pk.p)} each month, charged automatically in advance.`:`${money(pk.p)}, paid in full today.`}</p>
+    <div class="note">Policies are subject to the final coaching agreement. A receipt goes to your email right away.</div>
+    <div class="actions" style="margin:0">${back}<button class="btn" type="submit">Pay ${money(pk.p)} (preview) ↗</button></div></form>`;
+  }else{
+    h=`<div class="okb" role="status"><h3>You’re in.</h3><p style="margin:0">${E.pkg==='bmp'?'Your seat in the next Better Man Project group is reserved. Eli will send the start date and the link to join.':'Next up: schedule your first session, where you’ll build your Healing Habits Roadmap and choose your first one to three goals.'}</p><p class="note" style="margin-top:8px">Demo: in the live site, a confirmation email goes out here.</p></div><div><button class="btn outline" type="button" data-restart>Restart the preview</button></div>`;
+  }
+  $('#enrBody').innerHTML=h;
+}
+$('#enrBody').addEventListener('change',e=>{if(e.target.name==='pk'){E.pkg=e.target.value;renderEnroll();}});
+$('#enrBody').addEventListener('submit',e=>{e.preventDefault();E.i++;renderEnroll();$('#stp').scrollIntoView({block:'nearest'});});
+$('#enrBody').addEventListener('click',e=>{
+  if(e.target.closest('[data-back]')){E.i--;renderEnroll();}
+  if(e.target.closest('[data-restart]')){E.i=0;renderEnroll();}
+});
+$('#enrX').addEventListener('click',()=>$('#enrollDlg').close());
+$('#enrollDlg').addEventListener('click',e=>{if(e.target.id==='enrollDlg')e.target.close();});
+
+/* ---------- add-on controls ---------- */
+const AD={
+ A:{n:'Community',full:'Membership Community Setup',p:550,go:'community',
+    adds:'The Practice Room: a members-only space with photo and video sharing, join buttons, and a nav link. Built on a community platform in Eli’s account, with guidelines and moderation training.',
+    cost:'Skool Hobby: $9/mo + 10% + 30¢ per payment. Circle or Mighty Networks: $79 to $89/mo.',mo:9,
+    msg:'Add-on A adds the Practice Room (with photo and video sharing), a nav link, and a link from the Community card.'},
+ B:{n:'Enrollment',full:'Enrollment & Payments Setup',p:350,go:'packages',
+    adds:'An enrollment flow with package choice, intake form, agreement e-signature, and automatic monthly or pay-in-full checkout. Adds Enroll links on each package and a reserve-your-seat step for Better Man.',
+    cost:'Stripe: 2.9% + 30¢ per card payment, +0.7% on subscriptions. Bank transfer 0.8%, max $5. No monthly fee.',mo:0,
+    msg:'Add-on B adds Enroll links on the packages, a reserve-your-seat step for Better Man, and the enrollment flow.'},
+ C:{n:'Email',full:'Email Marketing Setup',p:300,go:'signup',
+    adds:'Interest tags, signup forms across the site, a branded template, and a 3-email welcome sequence in Eli’s voice.',
+    cost:'Kit: free to start. Automated sequences need the paid plan, about $33/mo.',mo:33,
+    msg:'Add-on C adds topic tags, a free resource, and a welcome-sequence preview to the signup, plus a footer signup.'},
+ D:{n:'Speaking',full:'Additional page: Speaking & Workshops',p:150,go:'speaking',
+    adds:'A full Speaking & Workshops section with topic descriptions, speaker bio, and an inquiry form.',
+    cost:'No added platform cost.',mo:0,
+    msg:'Add-on D adds a full Speaking and Workshops section, linked from the nav and the approach section.'},
+ E:{n:'Care plan',full:'Website Care Plan',p:75,monthly:true,go:'',
+    adds:'Up to 1 hour of updates a month plus a monthly check of forms, booking, and links. Not visible on the site.',
+    cost:'$75/month, cancel anytime. Optional.',mo:0,
+    msg:'Add-on E is behind the scenes: monthly updates and a check of forms, booking, and links.'}
+};
+const oneTime=()=>CORE+['A','B','C','D'].reduce((t,k)=>t+(on[k]?AD[k].p:0),0);
+$('#dchips').innerHTML=Object.entries(AD).map(([k,v])=>`<button type="button" class="dchip" data-k="${k}" aria-pressed="false"><i>${k}</i>${v.n} +${money(v.p)}${v.monthly?'/mo':''}</button>`).join('');
+function apply(changed){
+  $$('[data-addon]').forEach(el=>{
+    const k=el.dataset.addon,was=!el.hidden;
+    el.hidden=!on[k];
+    if(on[k]&&!was&&changed===k){el.classList.remove('flash');void el.offsetWidth;el.classList.add('flash');}
+  });
+  $$('[data-without]').forEach(el=>el.hidden=on[el.dataset.without]);
+  $$('.dchip').forEach(b=>b.setAttribute('aria-pressed',on[b.dataset.k]));
+  const all=Object.values(on).every(Boolean),none=Object.values(on).every(v=>!v);
+  $('#segAll').setAttribute('aria-pressed',all);$('#segCore').setAttribute('aria-pressed',none);
+  $('#tot').textContent=money(oneTime());
+  $('#totSub').textContent=(none?'Core build, one time':'One time')+(on.E?', plus $75/mo care plan':'');
+}
+function setAll(v){Object.keys(on).forEach(k=>on[k]=v);apply();toast(v?'All add-ons on. Use Highlight add-ons to see exactly what changed.':'Core site only: one scrolling page, one email signup, one contact form.');}
+$('#segCore').addEventListener('click',()=>setAll(false));
+$('#segAll').addEventListener('click',()=>setAll(true));
+$('#dchips').addEventListener('click',e=>{const b=e.target.closest('.dchip');if(!b)return;const k=b.dataset.k;on[k]=!on[k];apply(on[k]?k:null);toast(on[k]?AD[k].msg:'Add-on '+k+' removed.');});
+$('#hlBtn').addEventListener('click',e=>{const p=e.currentTarget.getAttribute('aria-pressed')!=='true';e.currentTarget.setAttribute('aria-pressed',p);document.body.classList.toggle('hl',p);});
+function pad(){const h=$('#dbar').offsetHeight+28;document.documentElement.style.setProperty('--demo-h',h+'px');}
+$('#minBtn').addEventListener('click',e=>{const m=$('#dbar').classList.toggle('min');e.currentTarget.textContent=m?'Show':'Hide';e.currentTarget.setAttribute('aria-expanded',!m);pad();});
+addEventListener('resize',pad);
+
+$('#detBtn').addEventListener('click',()=>{
+  const once=oneTime(),plat=BASE_PLATFORM+(on.A?AD.A.mo:0)+(on.C?AD.C.mo:0);
+  $('#tot3').innerHTML=`<div><b>${money(once)}</b>Build total, one time<br>50% deposit ${money(once/2)}, 50% at launch</div>
+   <div><b>${on.E?'$75/mo':'None'}</b>Care plan<br>Optional, cancel anytime</div>
+   <div><b>About ${money(plat)}/mo</b>Platform costs, paid by Eli<br>Website platform $29${on.A?', Skool $9':''}${on.C?', Kit $33':''}. Plus optional email $7 and scheduling $10.</div>`;
+  $('#dbody').innerHTML=`<tr><td><b>Core site</b><br>Always included</td><td class="n">${money(CORE)}</td><td>Core pages and sections, one email signup, basic SEO, 2 revision rounds, launch testing, walkthrough, 30 days of fixes.</td><td>Squarespace or Wix, $29/mo billed annually</td><td></td></tr>`
+   +Object.entries(AD).map(([k,v])=>`<tr><td><b>${k}. ${v.full}</b></td><td class="n">${money(v.p)}${v.monthly?'/mo':''}</td><td>${v.adds}</td><td>${v.cost}</td><td>${v.go?`<button class="btn outline" type="button" data-show="${k}">Show me</button>`:''}</td></tr>`).join('');
+  $('#costdlg').showModal();
+});
+$('#dbody').addEventListener('click',e=>{
+  const b=e.target.closest('[data-show]');if(!b)return;const k=b.dataset.show;
+  on[k]=true;apply(k);$('#costdlg').close();toast(AD[k].msg);
+  setTimeout(()=>{ if(k==='B'){jump('packages');} else jump(AD[k].go); },60);
+});
+$('#costX').addEventListener('click',()=>$('#costdlg').close());
+$('#costdlg').addEventListener('click',e=>{if(e.target.id==='costdlg')e.target.close();});
+
+apply();pad();
+})();
+</script>
+</body></html>
